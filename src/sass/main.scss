@@ -1,7 +1,12 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+@import './utils/vars';
+@import './utils/hidden';
+@import './base/reset';
+@import './base/common';
+@import './components/btn';
+@import './components/container';
+@import './components/social-list';
+@import './components/mobile-menu';
+@import './layout/hero-header';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+
+
