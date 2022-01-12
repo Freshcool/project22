@@ -468,4 +468,12 @@ img {
   top: 248px;
   z-index: 2;
 }
+
+.section-about {
+  background: var(--second-background);
+}
+
+.section-about--title {
+  color: var(--fourth-text-color);
+}
 /*# sourceMappingURL=main.css.map */
