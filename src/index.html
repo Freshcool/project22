@@ -9,11 +9,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
-        <link rel="stylesheet" href="./sass/main.css">
+        <link rel="stylesheet" href="/src/sass/main.css">
 </head>
 <body>
-    <!-- == HEADER == -->
     <header class="header">
+        <!-- == HEADER == -->
         <div class="container header__container">
             <nav class="nav">
                 <a href="" class="link nav__logo">
@@ -37,19 +37,17 @@
                     </li>
                 </ul> 
                 <button type="button" class="btn--big header__btn--buy">Buy now
-                    <svg class="icon-forward" width="6" height="8">
+                    <svg class="header__icon-forward" width="6" height="8">
                     <use href="./images/icons.svg#icon-forward"></use>
-                </svg>
+                    </svg>
                 </button>
-                <button type="button"
-                class="open-menu-btn">
-                <svg class="btn-open" width="20" height="20">
+                <button type="button" class="open-menu-btn">
+                    <svg class="btn-open" width="20" height="20">
                     <use href="./images/icons.svg#icon-burger"></use>
                 </svg>
                 </button>
-            </nav>
-           
-        
+            </nav> 
+            <!-- == HERO == -->            
             <div class="header__title">
                 <h1 class="header__title--wheit">ice cream made with
                     <span class="header__title--red">passion
@@ -61,7 +59,25 @@
                 </button>
                 <button type="button" class="btn--smol">How it’s made?        
                 </button>
-            </div>   
+            </div> 
+            <div class="header__ellipse--pink">
+                <picture>
+                    <source 
+                    srcset="./images/desk/ellipse.png 1x"
+                    media="(min-width:1280px)"
+                    > 
+                    <source 
+                    srcset="./images/tab/ellipse.png 1x"
+                    media="(min-width:768px)"
+                    > 
+                    <source 
+                    srcset="./images/mob/ellipse.png 1x"
+                    media="(min-width:320px)"
+                    >
+                    <img src="./images/desk/ellipse.png" 
+                    alt="ellipse">
+            </picture>
+            </div> 
             <div class="header__statistics1">
                 <p class="header__quantity">16</p>
                 <p class="header__name">cafes</p>
@@ -69,31 +85,108 @@
             <div class="header__statistics2">
                 <p class="header__quantity">23</p>
                 <p class="header__name">food trucks</p>
-            </div>
-            <div class="header__pic5">
-                <img src="./images/desk/slider-pic5_1.png" alt="">
-                <span class="header__content">
-                    <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <a href="header__arrow">
-                        <img src="./images/arrow-right_26.png" alt="">
-                    </a>             
-                </span>            
-            </div> 
-            <div class="header__pic7">
-                <img src="./images/desk/slider-pic7_1.png" alt="">
-            </div>  
-            <div class="header__ellipse">
-                <img src="./images/desk/ellipse.png" alt="">
-            </div> 
-            <div class="header__pic4">
-                <img src="./images/desk/slider-pic4_1.png" alt="">
             </div> 
             <div class="header__ellipse_w1">
-                <img src="./images/desk/ellipse_w.png" alt="">
+                <picture>
+                    <source 
+                    srcset="./images/desk/ellipse_w.png 1x"
+                    media="(min-width:1280px)"
+                    > 
+                    <source 
+                    srcset="./images/tab/ellipse_w.png 1x"
+                    media="(min-width:768px)"
+                    > 
+                    <img src="./images/desk/ellipse_w.png" 
+                    alt="ellipse_whait">
+                </picture>
             </div>
             <div class="header__ellipse_w2">
-                <img src="./images/desk/ellipse_w.png" alt="">
+                <picture>
+                    <source 
+                    srcset="./images/desk/ellipse_w.png 1x"
+                    media="(min-width:1280px)"
+                    > 
+                    <source 
+                    srcset="./images/tab/ellipse_w.png 1x"
+                    media="(min-width:768px)"
+                    > 
+                    <img src="./images/desk/ellipse_w.png" 
+                    alt="ellipse_whait">
+                </picture>
             </div>
+            <div class="header__bio-eco">
+                <picture>
+                    <source 
+                    srcset="./images/desk/slider-pic5_1.png 1x,
+                    ./images/desk/slider-pic5_1@2x.png 2x"
+                    media="(min-width:1280px)"
+                    > 
+                    <source 
+                    srcset="./images/tab/slider-pic5_1.png 1x,
+                    ./images/tab/slider-pic5_1@2x.png 2x"
+                    media="(min-width:768px)"
+                    > 
+                    <img src="./images/desk/slider-pic5_1.png" 
+                    alt="jug of milk">
+                </picture>
+                <div class="header__content">
+                    <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                    <a href="">
+                        <picture>
+                            <source 
+                                srcset="./images/arrow-right_26.png 1x"
+                                media="(min-width:1280px)"
+                                > 
+                                <source 
+                                srcset="./images/arrow-right_18.png 1x"
+                                media="(min-width:768px)"
+                                > 
+                            <img src="./images/arrow-right_26.png" 
+                            alt="arrow-right">
+                        </picture>
+                        
+                    </a>             
+                </div>            
+            </div> 
+            <div class="header__pic7">
+                <picture>
+                    <source 
+                    srcset="./images/desk/slider-pic7_1.png 1x,
+                    ./images/desk/slider-pic7_1@2x.png 2x"
+                    media="(min-width:1280px)"
+                    > 
+                    <source 
+                    srcset="./images/tab/slider-pic7_1.png 1x,
+                    ./images/tab/slider-pic7_1@2x.png 2x"
+                    media="(min-width:768px)"
+                    > 
+                    <source 
+                    srcset="./images/mob/slider-pic7_1.png 1x,
+                    ./images/mob/slider-pic7_1@2x.png 2x"
+                    media="(min-width:320px)"
+                    >
+                    <img 
+                    src="./images/desk/slider-pic7_1.png" 
+                    alt="ice"> 
+                </picture> 
+            </div>  
+            
+            <div class="header__pic4">
+                <picture>
+                    <source 
+                    srcset="./images/desk/slider-pic4_1.png 1x,
+                    ./images/desk/slider-pic4_1@2x.png 2x"
+                    media="(min-width:1280px)"
+                    > 
+                    <source 
+                    srcset="./images/tab/slider-pic4_1.png 1x,
+                    ./images/tab/slider-pic4_1@2x.png 2x"
+                    media="(min-width:768px)"
+                    > 
+                    <img src="./images/desk/slider-pic4_1.png" 
+                    alt="so_tasty">
+                </picture>
+            </div> 
         </div>
         <!-- == MOBILE-MENU == -->
         <div class="menu-container is-hidden">
@@ -102,7 +195,7 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
-            <button type="button" class="btn--big">Buy now
+            <button type="button" class="btn--big menu-container__btn-buy ">Buy now
                 <svg class="icon-forward" width="6" height="8">
                 <use href="./images/icons.svg#icon-forward"></use>
             </svg>
@@ -127,7 +220,7 @@
         </div> 
     </header>
     <main>
-        <div class="container">    
+        <!-- <div class="container">    
             <ul class="list social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="">
@@ -151,6 +244,7 @@
                     </a>
                 </li>
             </ul>
+        </div>  -->
         </div> 
         <!-- == SECTION-ABOUT == -->
         <section class="section-about">
@@ -186,6 +280,24 @@
             </ul>
             <button type="button" >Read more     
             </button>
+        </section>
+
+        <section class="advantages">
+            <h1 class="advantages__title">Our advantages</h1>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <h2 class="advantages__subtitle">721</h2>
+                        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h2 class="advantages__subtitle">16kg</h2>
+                        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                    <li class="advantages__item">
+                        <h2 class="advantages__subtitle">84</h2>
+                        <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
+                    </li>
+                </ul>
         </section>
 
         <!-- CUSTOMERS -->
