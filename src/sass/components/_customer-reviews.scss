@@ -1,0 +1,160 @@
+.img1 {
+    position: relative;/*для резины*/
+    max-width: 100%;
+    -webkit-transition-property:opacity, z-index;
+    -webkit-transition-duration:2s;
+    -moz-transition-property:opacity, z-index;
+    -moz-transition-duration:2s;
+    -o-transition-property:opacity, z-index;
+    -o-transition-duration:2s;
+    transition-property:opacity, z-index;
+    transition-duration:2s;
+    opacity: 1; /*не прозрачная только первая картинка*/
+    z-index: 1;
+
+    animation: imgAnim 30s linear infinite;
+    -webkit-animation: imgAnim 30s linear infinite;
+    -moz-animation: imgAnim 30s linear infinite;
+    -o-animation: imgAnim 30s linear infinite;
+}
+
+.img2, .img3 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    -webkit-transition-property:opacity, z-index;
+    -webkit-transition-duration:2s;
+    -moz-transition-property:opacity, z-index;
+    -moz-transition-duration:2s;
+    -o-transition-property:opacity, z-index;
+    -o-transition-duration:2s;
+    transition-property:opacity, z-index;
+    transition-duration:2s;
+    opacity: 0;/*все остальные прозрачные*/
+}
+
+.myslide {
+    img {
+    max-width: 100%;/*картинка резиновая*/
+    vertical-align: middle;
+    }
+}
+
+.img2 {
+    animation: imgAnim 30s linear 6s infinite;
+}
+
+.img3 {
+    animation: imgAnim 30s linear 12s infinite;
+}
+
+@keyframes imgAnim {
+    0% { opacity: 0; z-index: 5; }
+    8% { opacity: 1; z-index: 5; }
+    17% { opacity: 1; z-index: 5;}
+    25% { opacity: 0; z-index: 5; }
+    100% { opacity: 0; z-index: 5; }
+}
+@-webkit-keyframes imgAnim {
+    /*------------------*/
+}
+@-o-keyframes imgAnim {
+    /*------------------*/
+}
+@-moz-keyframes imgAnim {
+    /*------------------*/
+}
+
+.discript1, .discript2, .discript3 {
+    position: absolute;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.56);
+    bottom: 15px;
+    padding: 10px;
+}
+.tank h3 { 
+    color: #fff;
+    margin: 0;
+    margin-bottom: 3px;
+    font-family: Times New Roman;
+}
+.tank p {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+    font-family: Times New Roman;
+}
+
+.myslide:hover .tank {
+    -moz-animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}   
+
+.but1, .but2, .but3 {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    bottom: 25px;
+    left: 50%;
+    right: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: -1px -1px 1px 1px rgba(0,0,0, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    outline:none;
+}
+.but1 {
+    margin-left: -50px;
+}
+.but2 {
+    margin-left: -25px;
+}
+.but3 {
+    margin-left: 25px;
+}
+
+.round1, .round2, .round3 {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background:   #fff;
+    bottom: 25px;
+    left: 50%;
+    right: 10px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: -1px -1px 1px 1px rgba(0,0,0, 0.5);
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-radius: 7px;
+    outline:none;
+}
+.round1 {
+    margin-left: -50px;
+}
+
+.round2 {
+    margin-left: -25px;
+}
+
+.round3 {
+    margin-left: 25px;
+}
+
+    
+    
+    
+    
+    
