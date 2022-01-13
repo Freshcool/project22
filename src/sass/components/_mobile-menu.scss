@@ -1,24 +1,20 @@
 .menu-container {
-    margin-left: auto;
-    margin-right: auto;
     position: absolute;
     top: 0;
-    // left: 0;
+    right: 0;
     width:250px;
-    height: 100%;
+    height: 100vh;
     background-color: var(--background-mob-menu);
     padding: 60px 21px;
-    z-index: 5;
+    z-index:20;
     display: flex;
     flex-direction: column;
-    z-index: 110;
     &.is-hidden{
         visibility: hidden;
         pointer-events: none;
         opacity: 0;   
     }
 }
-
 .close-menu-btn{
     padding: 0;
     background-color: var(--header-background);
@@ -26,7 +22,9 @@
     top: 23px;
     right: 28px;
 }
-
+.menu-container__btn-buy{
+    justify-content: center;
+}
 .menu-container__item{
     margin-top: 23px;
     
@@ -38,11 +36,6 @@
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
-
-.icon-forward{
-    margin-left: 16px;
-}
-
 .current{
     color: var(--main-title-color);
 }
